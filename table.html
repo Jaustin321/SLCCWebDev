@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            border: 10px inset cyan;
+            font-size: 24px;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table {
+           /*background-color: pink;*/
+            width: 80%;
+            margin: auto;
+        }
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+        tr:nth-child(odd) {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!--Table Example-->
+    <h2>Table Example</h2>
+    <table>
+        <tr>
+            <th style="border: 10px outset gray">Company</th>    
+            <th>Owner</th>    
+            <th>Country</th>    
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td colspan="2">Jeff Bezos</td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td>Mark Zuckerberg</td>
+            <td>United States</td>
+        </tr>
+        <tr>
+            <td>Tesla</td>
+            <td rowspan="2">Elon Musk</td>
+            <td rowspan="2">South Africa</td>
+        </tr>
+        <tr>
+            <td>Twitter (X)</td>
+        </tr>
+    </table>
+</body>
+</html>
